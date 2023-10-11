@@ -1,0 +1,1420 @@
+== DATE:
+
+	Wednesday, 11. October 2023 at 21:10:44 Central European Summer Time
+	
+	2023-10-11T19:10:44Z
+
+
+
+== PAUSED REASON:
+
+	processCrashed
+
+
+
+== PREVIEW UPDATE ERROR:
+
+	CrashReportError: Fatal Error in resource_bundle_accessor.swift
+	
+	XCPreviewAgent crashed due to fatalError in resource_bundle_accessor.swift at line 44.
+	
+	unable to find bundle named FBPackageWithColorAsset_FBPackageWithColorAsset
+	
+	Process: XCPreviewAgent[30922]
+	Date/Time: 2023-10-11 19:10:38 +0000
+	Log File: <none>
+	
+	Application Specific Information:
+		dyld_sim [
+			dyld config: DYLD_SHARED_CACHE_DIR=/Users/simonnickel/Library/Developer/CoreSimulator/Caches/dyld/23A344/com.apple.CoreSimulator.SimRuntime.iOS-17-0.21A328 DYLD_ROOT_PATH=/Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime/Contents/Resources/RuntimeRoot DYLD_LIBRARY_PATH=/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator DYLD_INSERT_LIBRARIES=/System/Library/PrivateFrameworks/LiveExecutionResultsProbe.framework/LiveExecutionResultsProbe:/System/Library/PrivateFrameworks/PreviewsInjection.framework/PreviewsInjection DYLD_FRAMEWORK_PATH=/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator DYLD_FALLBACK_FRAMEWORK_PATH=/Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks DYLD_FALLBACK_LIBRARY_PATH=/Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime/Contents/Resources/RuntimeRoot/usr/lib
+		]
+		dyld [
+			dyld config: DYLD_SHARED_CACHE_DIR=/Users/simonnickel/Library/Developer/CoreSimulator/Caches/dyld/23A344/com.apple.CoreSimulator.SimRuntime.iOS-17-0.21A328 DYLD_ROOT_PATH=/Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime/Contents/Resources/RuntimeRoot DYLD_LIBRARY_PATH=/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator DYLD_INSERT_LIBRARIES=/System/Library/PrivateFrameworks/LiveExecutionResultsProbe.framework/LiveExecutionResultsProbe:/System/Library/PrivateFrameworks/PreviewsInjection.framework/PreviewsInjection DYLD_FRAMEWORK_PATH=/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator DYLD_FALLBACK_FRAMEWORK_PATH=/Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks DYLD_FALLBACK_LIBRARY_PATH=/Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime/Contents/Resources/RuntimeRoot/usr/lib
+		]
+		libswiftCore.dylib [
+			FBPackageWithColorAsset/resource_bundle_accessor.swift:44: Fatal error: unable to find bundle named FBPackageWithColorAsset_FBPackageWithColorAsset
+		]
+		libsystem_sim_platform.dylib [
+			CoreSimulator 920.6 - Device: iPhone 15 Pro (BCEB342F-234E-48E3-A338-BF3B64CEF580) - Runtime: iOS 17.0 (21A328) - DeviceType: iPhone 15 Pro
+		]
+	
+	Frames: [
+		Frame {
+			imageIndex: 36
+			imageOffset: 186098
+			symbol: _assertionFailure(_:_:file:line:flags:)
+			symbolLocation: 354
+		}
+		Frame {
+			imageIndex: 2
+			imageOffset: 9830
+			symbol: closure #1 in variable initialization expression of static NSBundle.module
+			symbolLocation: 3078
+			sourceFile: resource_bundle_accessor.swift
+			sourceLine: 44
+		}
+		Frame {
+			imageIndex: 2
+			imageOffset: 6729
+			symbol: one-time initialization function for module
+			symbolLocation: 9
+			sourceFile: resource_bundle_accessor.swift
+			sourceLine: 9
+		}
+		Frame {
+			imageIndex: 37
+			imageOffset: 11578
+			symbol: _dispatch_client_callout
+			symbolLocation: 8
+		}
+		Frame {
+			imageIndex: 37
+			imageOffset: 16627
+			symbol: _dispatch_once_callout
+			symbolLocation: 20
+		}
+		Frame {
+			imageIndex: 2
+			imageOffset: 10257
+			symbol: NSBundle.module.unsafeMutableAddressor
+			symbolLocation: 49
+			sourceFile: resource_bundle_accessor.swift
+			sourceLine: 9
+		}
+		Frame {
+			imageIndex: 2
+			imageOffset: 11444
+			symbol: static Color.colorFromAssetInPackage.getter
+			symbolLocation: 100
+			sourceFile: FBPackageWithColorAsset.swift
+			sourceLine: 9
+		}
+		Frame {
+			imageIndex: 1
+			imageOffset: 13464
+			symbol: closure #1 in static $s043ColorFromAssetInPackage_PreviewReplacement_abcdE2_133_1F2858C347B8040FBBD9FADF2509D3A5Ll0F0fMf_15PreviewRegistryfMu_.makePreview()
+			symbolLocation: 24
+			sourceFile: @__swiftmacro_043ColorFromAssetInPackage_PreviewReplacement_abcdE2_133_1F2858C347B8040FBBD9FADF2509D3A5Ll0F0fMf_.swift
+			sourceLine: 11
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 254854
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 258653
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 38
+			imageOffset: 71532
+			symbol: static MainActor.assumeIsolated<A>(_:file:line:)
+			symbolLocation: 140
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 254181
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 270600
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 273436
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 195085
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 206970
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 103984
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 105204
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 214000
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 33779
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 31365
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 39
+			imageOffset: 658937
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 37
+			imageOffset: 6800
+			symbol: _dispatch_call_block_and_release
+			symbolLocation: 12
+		}
+		Frame {
+			imageIndex: 37
+			imageOffset: 11578
+			symbol: _dispatch_client_callout
+			symbolLocation: 8
+		}
+		Frame {
+			imageIndex: 37
+			imageOffset: 72384
+			symbol: _dispatch_main_queue_drain
+			symbolLocation: 1420
+		}
+		Frame {
+			imageIndex: 37
+			imageOffset: 70950
+			symbol: _dispatch_main_queue_callback_4CF
+			symbolLocation: 31
+		}
+		Frame {
+			imageIndex: 40
+			imageOffset: 579664
+			symbol: __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+			symbolLocation: 9
+		}
+		Frame {
+			imageIndex: 40
+			imageOffset: 557451
+			symbol: __CFRunLoopRun
+			symbolLocation: 2463
+		}
+		Frame {
+			imageIndex: 40
+			imageOffset: 553993
+			symbol: CFRunLoopRunSpecific
+			symbolLocation: 557
+		}
+		Frame {
+			imageIndex: 41
+			imageOffset: 12679
+			symbol: GSEventRunModal
+			symbolLocation: 137
+		}
+		Frame {
+			imageIndex: 11
+			imageOffset: 16626594
+			symbol: -[UIApplication _run]
+			symbolLocation: 972
+		}
+		Frame {
+			imageIndex: 11
+			imageOffset: 16645648
+			symbol: UIApplicationMain
+			symbolLocation: 123
+		}
+		Frame {
+			imageIndex: 4
+			imageOffset: 17049470
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 4
+			imageOffset: 17049143
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 4
+			imageOffset: 13560485
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 34
+			imageOffset: 9566
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 35
+			imageOffset: 5102
+			symbol: start_sim
+			symbolLocation: 10
+		}
+		Frame {
+			imageIndex: 0
+			imageOffset: 25510
+			symbol: start
+			symbolLocation: 1942
+		}
+	]
+	
+	Images: [
+		Image {
+			uuid: 1289b60a-4980-342d-b1a4-250bbee392f1
+			base: 4577009664
+			name: dyld
+			path: /usr/lib/dyld
+			arch: x86_64
+		}
+		Image {
+			uuid: b350c3d4-db6b-3f9e-ba6e-fcf704a9f9f5
+			base: 4530565120
+			name: ColorFromAssetInPackage.1.preview-thunk.dylib
+			path: /Users/USER/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Intermediates.noindex/ColorFromAssetInPackage.build/Debug-iphonesimulator/ColorFromAssetInPackage.build/Objects-normal/x86_64/ColorFromAssetInPackage.1.preview-thunk.dylib
+			arch: x86_64
+		}
+		Image {
+			uuid: 8d69931c-22ac-3c84-a83c-3397c54c4bfe
+			base: 4530663424
+			name: ColorFromAssetInPackage_5C093947AB21920D_PackageProduct
+			path: /Users/USER/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator/PackageFrameworks/ColorFromAssetInPackage_5C093947AB21920D_PackageProduct.framework/ColorFromAssetInPackage_5C093947AB21920D_PackageProduct
+			arch: x86_64
+		}
+		Image {
+			uuid: d32bbac4-22f2-3be3-b097-d26f19f02153
+			base: 4530384896
+			name: libobjc-trampolines.dylib
+			path: /Volumes/VOLUME/*/libobjc-trampolines.dylib
+			arch: x86_64
+		}
+		Image {
+			uuid: 3dad7343-30f1-3eba-82eb-acd64cd3f6ca
+			base: 4659908608
+			name: SwiftUI
+			path: /Volumes/VOLUME/*/SwiftUI.framework/SwiftUI
+			arch: x86_64
+		}
+		Image {
+			uuid: 2292e9ab-a0df-314e-ac1f-8a0ee23b25b5
+			base: 4533723136
+			name: libswiftUIKit.dylib
+			path: /Volumes/VOLUME/*/libswiftUIKit.dylib
+			arch: x86_64
+		}
+		Image {
+			uuid: d160c87c-be22-319e-8300-4681dce19c96
+			base: 4533760000
+			name: libsystem_platform.dylib
+			path: /usr/lib/system/libsystem_platform.dylib
+			arch: x86_64
+		}
+		Image {
+			uuid: 3690c1fc-599f-39ff-bbdb-85422e9a996c
+			base: 4534308864
+			name: libsystem_kernel.dylib
+			path: /usr/lib/system/libsystem_kernel.dylib
+			arch: x86_64
+		}
+		Image {
+			uuid: 33c43114-85f0-3f32-86d7-8e6a2403d38c
+			base: 4534751232
+			name: libsystem_pthread.dylib
+			path: /usr/lib/system/libsystem_pthread.dylib
+			arch: x86_64
+		}
+		Image {
+			uuid: a5a31a64-4bc3-3abf-962b-8ccb5fe3c7a0
+			base: 4544061440
+			name: RecapPerformanceTesting
+			path: /Volumes/VOLUME/*/RecapPerformanceTesting.framework/RecapPerformanceTesting
+			arch: x86_64
+		}
+		Image {
+			uuid: 780d56ae-8d54-3496-bb9b-61e1ce1e7b22
+			base: 4533907456
+			name: UIKit
+			path: /Volumes/VOLUME/*/UIKit.framework/UIKit
+			arch: x86_64
+		}
+		Image {
+			uuid: 0a1d5f3f-9ef7-379d-9d1b-d17102fd53b9
+			base: 4578091008
+			name: UIKitCore
+			path: /Volumes/VOLUME/*/UIKitCore.framework/UIKitCore
+			arch: x86_64
+		}
+		Image {
+			uuid: a8989989-b548-36a8-bec1-c26967f83511
+			base: 4545646592
+			name: DocumentManager
+			path: /Volumes/VOLUME/*/DocumentManager.framework/DocumentManager
+			arch: x86_64
+		}
+		Image {
+			uuid: e2dc780a-083a-309e-b19f-f6df1d2aae7c
+			base: 4546269184
+			name: ShareSheet
+			path: /Volumes/VOLUME/*/ShareSheet.framework/ShareSheet
+			arch: x86_64
+		}
+		Image {
+			uuid: 12a7fdb2-d0f5-3288-b239-989f9d8fcad6
+			base: 4544327680
+			name: PrintKitUI
+			path: /Volumes/VOLUME/*/PrintKitUI.framework/PrintKitUI
+			arch: x86_64
+		}
+		Image {
+			uuid: 82d5c4f3-d064-38f4-b461-8b5575cf04a5
+			base: 4556087296
+			name: WebKitLegacy
+			path: /Volumes/VOLUME/*/WebKitLegacy.framework/WebKitLegacy
+			arch: x86_64
+		}
+		Image {
+			uuid: 96963227-ce5c-3db2-82d5-11ea30a6d138
+			base: 4764282880
+			name: JavaScriptCore
+			path: /Volumes/VOLUME/*/JavaScriptCore.framework/JavaScriptCore
+			arch: x86_64
+		}
+		Image {
+			uuid: ba18840f-c8ae-32ac-9198-5ec5b44596e9
+			base: 4932464640
+			name: WebCore
+			path: /Volumes/VOLUME/*/WebCore.framework/WebCore
+			arch: x86_64
+		}
+		Image {
+			uuid: 4b051e59-ab9a-3792-9e33-247907ff466d
+			base: 4548988928
+			name: libANGLE-shared.dylib
+			path: /Volumes/VOLUME/*/WebCore.framework/Frameworks/libANGLE-shared.dylib
+			arch: x86_64
+		}
+		Image {
+			uuid: 1eed8944-60f6-3fa9-9f9c-1e2c2f61b71a
+			base: 4562259968
+			name: WebGPU
+			path: /Volumes/VOLUME/*/WebGPU.framework/WebGPU
+			arch: x86_64
+		}
+		Image {
+			uuid: f5bed1b1-bdf9-3ae2-975b-995b213ebbff
+			base: 4638121984
+			name: libwebrtc.dylib
+			path: /Volumes/VOLUME/*/WebCore.framework/Frameworks/libwebrtc.dylib
+			arch: x86_64
+		}
+		Image {
+			uuid: dbf70899-fe4c-3a32-b27d-2c03683e1cc0
+			base: 4543754240
+			name: MLCompilerServices
+			path: /Volumes/VOLUME/*/MLCompilerServices.framework/MLCompilerServices
+			arch: x86_64
+		}
+		Image {
+			uuid: 8dafd5e9-d095-322c-a9d3-fc872e95c131
+			base: 4569276416
+			name: ChronoKit
+			path: /Volumes/VOLUME/*/ChronoKit.framework/ChronoKit
+			arch: x86_64
+		}
+		Image {
+			uuid: 971b9562-ca38-36f6-85c3-6979cd1ccb34
+			base: 4559532032
+			name: WidgetKit
+			path: /Volumes/VOLUME/*/WidgetKit.framework/WidgetKit
+			arch: x86_64
+		}
+		Image {
+			uuid: c97bc830-d499-33b7-8968-fd770946b6f8
+			base: 4555501568
+			name: PreviewsOSSupportUI
+			path: /Volumes/VOLUME/*/PreviewsOSSupportUI.framework/PreviewsOSSupportUI
+			arch: x86_64
+		}
+		Image {
+			uuid: 0eea3580-a22f-39de-80f8-bac78d3c2161
+			base: 4555042816
+			name: PreviewsServicesUI
+			path: /Volumes/VOLUME/*/PreviewsServicesUI.framework/PreviewsServicesUI
+			arch: x86_64
+		}
+		Image {
+			uuid: 787c79bc-2fe7-323b-81d2-342f600f477f
+			base: 4564508672
+			name: BaseBoardUI
+			path: /Volumes/VOLUME/*/BaseBoardUI.framework/BaseBoardUI
+			arch: x86_64
+		}
+		Image {
+			uuid: a8f406e8-d24f-3ff3-a4bc-6033f4a6ad3f
+			base: 4563668992
+			name: ChronoUIServices
+			path: /Volumes/VOLUME/*/ChronoUIServices.framework/ChronoUIServices
+			arch: x86_64
+		}
+		Image {
+			uuid: 8a2304d5-6626-3fd2-802f-d1c6fa24d7e6
+			base: 4566454272
+			name: ActivityUIServices
+			path: /Volumes/VOLUME/*/ActivityUIServices.framework/ActivityUIServices
+			arch: x86_64
+		}
+		Image {
+			uuid: 17b19589-2dc1-32df-86ab-64f5a38f02ce
+			base: 4567220224
+			name: ExtensionKit
+			path: /Volumes/VOLUME/*/ExtensionKit.framework/ExtensionKit
+			arch: x86_64
+		}
+		Image {
+			uuid: 0f72a9ce-0d2a-3c24-853b-368f9b23a092
+			base: 4572094464
+			name: Preferences
+			path: /Volumes/VOLUME/*/Preferences.framework/Preferences
+			arch: x86_64
+		}
+		Image {
+			uuid: bbc08345-a880-3b6c-bb0c-926e3f3dd726
+			base: 4574687232
+			name: BacklightServicesHost
+			path: /Volumes/VOLUME/*/BacklightServicesHost.framework/BacklightServicesHost
+			arch: x86_64
+		}
+		Image {
+			uuid: 9d4c5a5d-5566-3edf-9682-43d77f7c09a1
+			base: 4555718656
+			name: SettingsFoundation
+			path: /Volumes/VOLUME/*/SettingsFoundation.framework/SettingsFoundation
+			arch: x86_64
+		}
+		Image {
+			uuid: f168807e-eee2-3e63-b945-593ef579b584
+			base: 4533002240
+			name: PreviewsInjection
+			path: /Volumes/VOLUME/*/PreviewsInjection.framework/PreviewsInjection
+			arch: x86_64
+		}
+		Image {
+			uuid: 71fb868b-919b-3f0f-a65a-a237fe3e9f7c
+			base: 4527874048
+			name: XCPreviewAgent
+			path: /Users/USER/Library/Developer/Xcode/UserData/Previews/Simulator Devices/BCEB342F-234E-48E3-A338-BF3B64CEF580/data/Containers/Bundle/Application/37F8AB25-5A2E-4DC9-B42F-703A2D762718/XCPreviewAgent.app/XCPreviewAgent
+			arch: x86_64
+		}
+		Image {
+			uuid: 73f239b0-6438-3d25-9ce1-214e4bbc75de
+			base: 4527955968
+			name: dyld_sim
+			path: /Volumes/VOLUME/*/dyld_sim
+			arch: x86_64
+		}
+		Image {
+			uuid: f7c58a68-f369-3f9f-a717-288b442a3cbb
+			base: 140703368335360
+			name: libswiftCore.dylib
+			path: /Volumes/VOLUME/*/libswiftCore.dylib
+			arch: x86_64
+		}
+		Image {
+			uuid: 4413e494-5253-3745-b7d6-9a5067268a53
+			base: 140703129964544
+			name: libdispatch.dylib
+			path: /Volumes/VOLUME/*/libdispatch.dylib
+			arch: x86_64
+		}
+		Image {
+			uuid: b46b975c-a360-3341-8a76-3b72da547e42
+			base: 140704144760832
+			name: libswift_Concurrency.dylib
+			path: /Volumes/VOLUME/*/libswift_Concurrency.dylib
+			arch: x86_64
+		}
+		Image {
+			uuid: dee288cc-7ef1-3a0f-8a25-41fe4ed327c0
+			base: 140704036958208
+			name: PreviewsFoundation
+			path: /Volumes/VOLUME/*/PreviewsFoundation.framework/PreviewsFoundation
+			arch: x86_64
+		}
+		Image {
+			uuid: 2e6951e4-83d7-34ca-bb18-98ff4b45820e
+			base: 140703132139520
+			name: CoreFoundation
+			path: /Volumes/VOLUME/*/CoreFoundation.framework/CoreFoundation
+			arch: x86_64
+		}
+		Image {
+			uuid: 69e8cd17-ed53-3804-9050-100ab9710d09
+			base: 140703302995968
+			name: GraphicsServices
+			path: /Volumes/VOLUME/*/GraphicsServices.framework/GraphicsServices
+			arch: x86_64
+		}
+		Image {
+			uuid: 00000000-0000-0000-0000-000000000000
+			base: 0
+			name: <none>
+			path: <none>
+		}
+		Image {
+			uuid: 874668ad-42a3-3199-b961-73f21e14867d
+			base: 140703136366592
+			name: Foundation
+			path: /Volumes/VOLUME/*/Foundation.framework/Foundation
+			arch: x86_64
+		}
+	]
+	
+	==================================
+	
+	|  RemoteHumanReadableError: The operation couldn’t be completed. XPC error received on message reply handler
+	|
+	|  BSServiceConnectionErrorDomain (3):
+	|  ==BSErrorCodeDescription: OperationFailed
+	|  ==NSLocalizedFailureReason: XPC error received on message reply handler
+
+
+
+== ERROR:
+
+	CrashReportError: Fatal Error in resource_bundle_accessor.swift
+	
+	XCPreviewAgent crashed due to fatalError in resource_bundle_accessor.swift at line 44.
+	
+	unable to find bundle named FBPackageWithColorAsset_FBPackageWithColorAsset
+	
+	Process: XCPreviewAgent[30922]
+	Date/Time: 2023-10-11 19:10:38 +0000
+	Log File: <none>
+	
+	Application Specific Information:
+		dyld_sim [
+			dyld config: DYLD_SHARED_CACHE_DIR=/Users/simonnickel/Library/Developer/CoreSimulator/Caches/dyld/23A344/com.apple.CoreSimulator.SimRuntime.iOS-17-0.21A328 DYLD_ROOT_PATH=/Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime/Contents/Resources/RuntimeRoot DYLD_LIBRARY_PATH=/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator DYLD_INSERT_LIBRARIES=/System/Library/PrivateFrameworks/LiveExecutionResultsProbe.framework/LiveExecutionResultsProbe:/System/Library/PrivateFrameworks/PreviewsInjection.framework/PreviewsInjection DYLD_FRAMEWORK_PATH=/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator DYLD_FALLBACK_FRAMEWORK_PATH=/Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks DYLD_FALLBACK_LIBRARY_PATH=/Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime/Contents/Resources/RuntimeRoot/usr/lib
+		]
+		dyld [
+			dyld config: DYLD_SHARED_CACHE_DIR=/Users/simonnickel/Library/Developer/CoreSimulator/Caches/dyld/23A344/com.apple.CoreSimulator.SimRuntime.iOS-17-0.21A328 DYLD_ROOT_PATH=/Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime/Contents/Resources/RuntimeRoot DYLD_LIBRARY_PATH=/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator DYLD_INSERT_LIBRARIES=/System/Library/PrivateFrameworks/LiveExecutionResultsProbe.framework/LiveExecutionResultsProbe:/System/Library/PrivateFrameworks/PreviewsInjection.framework/PreviewsInjection DYLD_FRAMEWORK_PATH=/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator DYLD_FALLBACK_FRAMEWORK_PATH=/Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks DYLD_FALLBACK_LIBRARY_PATH=/Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime/Contents/Resources/RuntimeRoot/usr/lib
+		]
+		libswiftCore.dylib [
+			FBPackageWithColorAsset/resource_bundle_accessor.swift:44: Fatal error: unable to find bundle named FBPackageWithColorAsset_FBPackageWithColorAsset
+		]
+		libsystem_sim_platform.dylib [
+			CoreSimulator 920.6 - Device: iPhone 15 Pro (BCEB342F-234E-48E3-A338-BF3B64CEF580) - Runtime: iOS 17.0 (21A328) - DeviceType: iPhone 15 Pro
+		]
+	
+	Frames: [
+		Frame {
+			imageIndex: 36
+			imageOffset: 186098
+			symbol: _assertionFailure(_:_:file:line:flags:)
+			symbolLocation: 354
+		}
+		Frame {
+			imageIndex: 2
+			imageOffset: 9830
+			symbol: closure #1 in variable initialization expression of static NSBundle.module
+			symbolLocation: 3078
+			sourceFile: resource_bundle_accessor.swift
+			sourceLine: 44
+		}
+		Frame {
+			imageIndex: 2
+			imageOffset: 6729
+			symbol: one-time initialization function for module
+			symbolLocation: 9
+			sourceFile: resource_bundle_accessor.swift
+			sourceLine: 9
+		}
+		Frame {
+			imageIndex: 37
+			imageOffset: 11578
+			symbol: _dispatch_client_callout
+			symbolLocation: 8
+		}
+		Frame {
+			imageIndex: 37
+			imageOffset: 16627
+			symbol: _dispatch_once_callout
+			symbolLocation: 20
+		}
+		Frame {
+			imageIndex: 2
+			imageOffset: 10257
+			symbol: NSBundle.module.unsafeMutableAddressor
+			symbolLocation: 49
+			sourceFile: resource_bundle_accessor.swift
+			sourceLine: 9
+		}
+		Frame {
+			imageIndex: 2
+			imageOffset: 11444
+			symbol: static Color.colorFromAssetInPackage.getter
+			symbolLocation: 100
+			sourceFile: FBPackageWithColorAsset.swift
+			sourceLine: 9
+		}
+		Frame {
+			imageIndex: 1
+			imageOffset: 13464
+			symbol: closure #1 in static $s043ColorFromAssetInPackage_PreviewReplacement_abcdE2_133_1F2858C347B8040FBBD9FADF2509D3A5Ll0F0fMf_15PreviewRegistryfMu_.makePreview()
+			symbolLocation: 24
+			sourceFile: @__swiftmacro_043ColorFromAssetInPackage_PreviewReplacement_abcdE2_133_1F2858C347B8040FBBD9FADF2509D3A5Ll0F0fMf_.swift
+			sourceLine: 11
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 254854
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 258653
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 38
+			imageOffset: 71532
+			symbol: static MainActor.assumeIsolated<A>(_:file:line:)
+			symbolLocation: 140
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 254181
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 270600
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 273436
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 195085
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 206970
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 103984
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 105204
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 214000
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 33779
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 33
+			imageOffset: 31365
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 39
+			imageOffset: 658937
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 37
+			imageOffset: 6800
+			symbol: _dispatch_call_block_and_release
+			symbolLocation: 12
+		}
+		Frame {
+			imageIndex: 37
+			imageOffset: 11578
+			symbol: _dispatch_client_callout
+			symbolLocation: 8
+		}
+		Frame {
+			imageIndex: 37
+			imageOffset: 72384
+			symbol: _dispatch_main_queue_drain
+			symbolLocation: 1420
+		}
+		Frame {
+			imageIndex: 37
+			imageOffset: 70950
+			symbol: _dispatch_main_queue_callback_4CF
+			symbolLocation: 31
+		}
+		Frame {
+			imageIndex: 40
+			imageOffset: 579664
+			symbol: __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+			symbolLocation: 9
+		}
+		Frame {
+			imageIndex: 40
+			imageOffset: 557451
+			symbol: __CFRunLoopRun
+			symbolLocation: 2463
+		}
+		Frame {
+			imageIndex: 40
+			imageOffset: 553993
+			symbol: CFRunLoopRunSpecific
+			symbolLocation: 557
+		}
+		Frame {
+			imageIndex: 41
+			imageOffset: 12679
+			symbol: GSEventRunModal
+			symbolLocation: 137
+		}
+		Frame {
+			imageIndex: 11
+			imageOffset: 16626594
+			symbol: -[UIApplication _run]
+			symbolLocation: 972
+		}
+		Frame {
+			imageIndex: 11
+			imageOffset: 16645648
+			symbol: UIApplicationMain
+			symbolLocation: 123
+		}
+		Frame {
+			imageIndex: 4
+			imageOffset: 17049470
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 4
+			imageOffset: 17049143
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 4
+			imageOffset: 13560485
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 34
+			imageOffset: 9566
+			symbol: <none>
+			symbolLocation: <none>
+		}
+		Frame {
+			imageIndex: 35
+			imageOffset: 5102
+			symbol: start_sim
+			symbolLocation: 10
+		}
+		Frame {
+			imageIndex: 0
+			imageOffset: 25510
+			symbol: start
+			symbolLocation: 1942
+		}
+	]
+	
+	Images: [
+		Image {
+			uuid: 1289b60a-4980-342d-b1a4-250bbee392f1
+			base: 4577009664
+			name: dyld
+			path: /usr/lib/dyld
+			arch: x86_64
+		}
+		Image {
+			uuid: b350c3d4-db6b-3f9e-ba6e-fcf704a9f9f5
+			base: 4530565120
+			name: ColorFromAssetInPackage.1.preview-thunk.dylib
+			path: /Users/USER/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Intermediates.noindex/ColorFromAssetInPackage.build/Debug-iphonesimulator/ColorFromAssetInPackage.build/Objects-normal/x86_64/ColorFromAssetInPackage.1.preview-thunk.dylib
+			arch: x86_64
+		}
+		Image {
+			uuid: 8d69931c-22ac-3c84-a83c-3397c54c4bfe
+			base: 4530663424
+			name: ColorFromAssetInPackage_5C093947AB21920D_PackageProduct
+			path: /Users/USER/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator/PackageFrameworks/ColorFromAssetInPackage_5C093947AB21920D_PackageProduct.framework/ColorFromAssetInPackage_5C093947AB21920D_PackageProduct
+			arch: x86_64
+		}
+		Image {
+			uuid: d32bbac4-22f2-3be3-b097-d26f19f02153
+			base: 4530384896
+			name: libobjc-trampolines.dylib
+			path: /Volumes/VOLUME/*/libobjc-trampolines.dylib
+			arch: x86_64
+		}
+		Image {
+			uuid: 3dad7343-30f1-3eba-82eb-acd64cd3f6ca
+			base: 4659908608
+			name: SwiftUI
+			path: /Volumes/VOLUME/*/SwiftUI.framework/SwiftUI
+			arch: x86_64
+		}
+		Image {
+			uuid: 2292e9ab-a0df-314e-ac1f-8a0ee23b25b5
+			base: 4533723136
+			name: libswiftUIKit.dylib
+			path: /Volumes/VOLUME/*/libswiftUIKit.dylib
+			arch: x86_64
+		}
+		Image {
+			uuid: d160c87c-be22-319e-8300-4681dce19c96
+			base: 4533760000
+			name: libsystem_platform.dylib
+			path: /usr/lib/system/libsystem_platform.dylib
+			arch: x86_64
+		}
+		Image {
+			uuid: 3690c1fc-599f-39ff-bbdb-85422e9a996c
+			base: 4534308864
+			name: libsystem_kernel.dylib
+			path: /usr/lib/system/libsystem_kernel.dylib
+			arch: x86_64
+		}
+		Image {
+			uuid: 33c43114-85f0-3f32-86d7-8e6a2403d38c
+			base: 4534751232
+			name: libsystem_pthread.dylib
+			path: /usr/lib/system/libsystem_pthread.dylib
+			arch: x86_64
+		}
+		Image {
+			uuid: a5a31a64-4bc3-3abf-962b-8ccb5fe3c7a0
+			base: 4544061440
+			name: RecapPerformanceTesting
+			path: /Volumes/VOLUME/*/RecapPerformanceTesting.framework/RecapPerformanceTesting
+			arch: x86_64
+		}
+		Image {
+			uuid: 780d56ae-8d54-3496-bb9b-61e1ce1e7b22
+			base: 4533907456
+			name: UIKit
+			path: /Volumes/VOLUME/*/UIKit.framework/UIKit
+			arch: x86_64
+		}
+		Image {
+			uuid: 0a1d5f3f-9ef7-379d-9d1b-d17102fd53b9
+			base: 4578091008
+			name: UIKitCore
+			path: /Volumes/VOLUME/*/UIKitCore.framework/UIKitCore
+			arch: x86_64
+		}
+		Image {
+			uuid: a8989989-b548-36a8-bec1-c26967f83511
+			base: 4545646592
+			name: DocumentManager
+			path: /Volumes/VOLUME/*/DocumentManager.framework/DocumentManager
+			arch: x86_64
+		}
+		Image {
+			uuid: e2dc780a-083a-309e-b19f-f6df1d2aae7c
+			base: 4546269184
+			name: ShareSheet
+			path: /Volumes/VOLUME/*/ShareSheet.framework/ShareSheet
+			arch: x86_64
+		}
+		Image {
+			uuid: 12a7fdb2-d0f5-3288-b239-989f9d8fcad6
+			base: 4544327680
+			name: PrintKitUI
+			path: /Volumes/VOLUME/*/PrintKitUI.framework/PrintKitUI
+			arch: x86_64
+		}
+		Image {
+			uuid: 82d5c4f3-d064-38f4-b461-8b5575cf04a5
+			base: 4556087296
+			name: WebKitLegacy
+			path: /Volumes/VOLUME/*/WebKitLegacy.framework/WebKitLegacy
+			arch: x86_64
+		}
+		Image {
+			uuid: 96963227-ce5c-3db2-82d5-11ea30a6d138
+			base: 4764282880
+			name: JavaScriptCore
+			path: /Volumes/VOLUME/*/JavaScriptCore.framework/JavaScriptCore
+			arch: x86_64
+		}
+		Image {
+			uuid: ba18840f-c8ae-32ac-9198-5ec5b44596e9
+			base: 4932464640
+			name: WebCore
+			path: /Volumes/VOLUME/*/WebCore.framework/WebCore
+			arch: x86_64
+		}
+		Image {
+			uuid: 4b051e59-ab9a-3792-9e33-247907ff466d
+			base: 4548988928
+			name: libANGLE-shared.dylib
+			path: /Volumes/VOLUME/*/WebCore.framework/Frameworks/libANGLE-shared.dylib
+			arch: x86_64
+		}
+		Image {
+			uuid: 1eed8944-60f6-3fa9-9f9c-1e2c2f61b71a
+			base: 4562259968
+			name: WebGPU
+			path: /Volumes/VOLUME/*/WebGPU.framework/WebGPU
+			arch: x86_64
+		}
+		Image {
+			uuid: f5bed1b1-bdf9-3ae2-975b-995b213ebbff
+			base: 4638121984
+			name: libwebrtc.dylib
+			path: /Volumes/VOLUME/*/WebCore.framework/Frameworks/libwebrtc.dylib
+			arch: x86_64
+		}
+		Image {
+			uuid: dbf70899-fe4c-3a32-b27d-2c03683e1cc0
+			base: 4543754240
+			name: MLCompilerServices
+			path: /Volumes/VOLUME/*/MLCompilerServices.framework/MLCompilerServices
+			arch: x86_64
+		}
+		Image {
+			uuid: 8dafd5e9-d095-322c-a9d3-fc872e95c131
+			base: 4569276416
+			name: ChronoKit
+			path: /Volumes/VOLUME/*/ChronoKit.framework/ChronoKit
+			arch: x86_64
+		}
+		Image {
+			uuid: 971b9562-ca38-36f6-85c3-6979cd1ccb34
+			base: 4559532032
+			name: WidgetKit
+			path: /Volumes/VOLUME/*/WidgetKit.framework/WidgetKit
+			arch: x86_64
+		}
+		Image {
+			uuid: c97bc830-d499-33b7-8968-fd770946b6f8
+			base: 4555501568
+			name: PreviewsOSSupportUI
+			path: /Volumes/VOLUME/*/PreviewsOSSupportUI.framework/PreviewsOSSupportUI
+			arch: x86_64
+		}
+		Image {
+			uuid: 0eea3580-a22f-39de-80f8-bac78d3c2161
+			base: 4555042816
+			name: PreviewsServicesUI
+			path: /Volumes/VOLUME/*/PreviewsServicesUI.framework/PreviewsServicesUI
+			arch: x86_64
+		}
+		Image {
+			uuid: 787c79bc-2fe7-323b-81d2-342f600f477f
+			base: 4564508672
+			name: BaseBoardUI
+			path: /Volumes/VOLUME/*/BaseBoardUI.framework/BaseBoardUI
+			arch: x86_64
+		}
+		Image {
+			uuid: a8f406e8-d24f-3ff3-a4bc-6033f4a6ad3f
+			base: 4563668992
+			name: ChronoUIServices
+			path: /Volumes/VOLUME/*/ChronoUIServices.framework/ChronoUIServices
+			arch: x86_64
+		}
+		Image {
+			uuid: 8a2304d5-6626-3fd2-802f-d1c6fa24d7e6
+			base: 4566454272
+			name: ActivityUIServices
+			path: /Volumes/VOLUME/*/ActivityUIServices.framework/ActivityUIServices
+			arch: x86_64
+		}
+		Image {
+			uuid: 17b19589-2dc1-32df-86ab-64f5a38f02ce
+			base: 4567220224
+			name: ExtensionKit
+			path: /Volumes/VOLUME/*/ExtensionKit.framework/ExtensionKit
+			arch: x86_64
+		}
+		Image {
+			uuid: 0f72a9ce-0d2a-3c24-853b-368f9b23a092
+			base: 4572094464
+			name: Preferences
+			path: /Volumes/VOLUME/*/Preferences.framework/Preferences
+			arch: x86_64
+		}
+		Image {
+			uuid: bbc08345-a880-3b6c-bb0c-926e3f3dd726
+			base: 4574687232
+			name: BacklightServicesHost
+			path: /Volumes/VOLUME/*/BacklightServicesHost.framework/BacklightServicesHost
+			arch: x86_64
+		}
+		Image {
+			uuid: 9d4c5a5d-5566-3edf-9682-43d77f7c09a1
+			base: 4555718656
+			name: SettingsFoundation
+			path: /Volumes/VOLUME/*/SettingsFoundation.framework/SettingsFoundation
+			arch: x86_64
+		}
+		Image {
+			uuid: f168807e-eee2-3e63-b945-593ef579b584
+			base: 4533002240
+			name: PreviewsInjection
+			path: /Volumes/VOLUME/*/PreviewsInjection.framework/PreviewsInjection
+			arch: x86_64
+		}
+		Image {
+			uuid: 71fb868b-919b-3f0f-a65a-a237fe3e9f7c
+			base: 4527874048
+			name: XCPreviewAgent
+			path: /Users/USER/Library/Developer/Xcode/UserData/Previews/Simulator Devices/BCEB342F-234E-48E3-A338-BF3B64CEF580/data/Containers/Bundle/Application/37F8AB25-5A2E-4DC9-B42F-703A2D762718/XCPreviewAgent.app/XCPreviewAgent
+			arch: x86_64
+		}
+		Image {
+			uuid: 73f239b0-6438-3d25-9ce1-214e4bbc75de
+			base: 4527955968
+			name: dyld_sim
+			path: /Volumes/VOLUME/*/dyld_sim
+			arch: x86_64
+		}
+		Image {
+			uuid: f7c58a68-f369-3f9f-a717-288b442a3cbb
+			base: 140703368335360
+			name: libswiftCore.dylib
+			path: /Volumes/VOLUME/*/libswiftCore.dylib
+			arch: x86_64
+		}
+		Image {
+			uuid: 4413e494-5253-3745-b7d6-9a5067268a53
+			base: 140703129964544
+			name: libdispatch.dylib
+			path: /Volumes/VOLUME/*/libdispatch.dylib
+			arch: x86_64
+		}
+		Image {
+			uuid: b46b975c-a360-3341-8a76-3b72da547e42
+			base: 140704144760832
+			name: libswift_Concurrency.dylib
+			path: /Volumes/VOLUME/*/libswift_Concurrency.dylib
+			arch: x86_64
+		}
+		Image {
+			uuid: dee288cc-7ef1-3a0f-8a25-41fe4ed327c0
+			base: 140704036958208
+			name: PreviewsFoundation
+			path: /Volumes/VOLUME/*/PreviewsFoundation.framework/PreviewsFoundation
+			arch: x86_64
+		}
+		Image {
+			uuid: 2e6951e4-83d7-34ca-bb18-98ff4b45820e
+			base: 140703132139520
+			name: CoreFoundation
+			path: /Volumes/VOLUME/*/CoreFoundation.framework/CoreFoundation
+			arch: x86_64
+		}
+		Image {
+			uuid: 69e8cd17-ed53-3804-9050-100ab9710d09
+			base: 140703302995968
+			name: GraphicsServices
+			path: /Volumes/VOLUME/*/GraphicsServices.framework/GraphicsServices
+			arch: x86_64
+		}
+		Image {
+			uuid: 00000000-0000-0000-0000-000000000000
+			base: 0
+			name: <none>
+			path: <none>
+		}
+		Image {
+			uuid: 874668ad-42a3-3199-b961-73f21e14867d
+			base: 140703136366592
+			name: Foundation
+			path: /Volumes/VOLUME/*/Foundation.framework/Foundation
+			arch: x86_64
+		}
+	]
+	
+	==================================
+	
+	|  RemoteHumanReadableError: The operation couldn’t be completed. XPC error received on message reply handler
+	|
+	|  BSServiceConnectionErrorDomain (3):
+	|  ==BSErrorCodeDescription: OperationFailed
+	|  ==NSLocalizedFailureReason: XPC error received on message reply handler
+
+
+
+== VERSION INFO:
+
+	Tools: 15A240d
+	OS:    23A344
+	PID:   6157
+	Model: MacBook Pro
+	Arch:  x86_64h
+
+
+
+== ENVIRONMENT:
+
+	openFiles = [
+		/Users/simonnickel/Archive/development/github/feedback-assistant/ColorFromAssetInPackage/Sources/ColorFromAssetInPackage/ColorFromAssetInPackage.swift
+	]
+	wantsNewBuildSystem = true
+	newBuildSystemAvailable = true
+	activeScheme = ColorFromAssetInPackage
+	activeRunDestination = iPhone von Simon Nickel (2) variant iphoneos arm64e
+	workspaceArena = [x]
+	buildArena = [x]
+	buildableEntries = [
+		ColorFromAssetInPackage
+		ColorFromAssetInPackage
+	]
+	runMode = Dynamic Replacement
+
+
+
+== SELECTED RUN DESTINATION:
+
+	name = iPhone von Simon Nickel (2)
+	eligible = true
+	sdk = Optional(<DVTSDK:0x7f8951946110:'iphoneos17.0':iOS 17.0:<DVTFilePath:0x600000561260:'/Applications/Xcode-15.0.0-Release.Candidate.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk'>>)
+	variant = Optional("iphoneos")
+	device = Optional(<DVTFoundation.DVTCoreDevice: 0x7f8930f46660 (iPhone von Simon Nickel (2) | arm64e)>)
+
+
+
+== SELECTED RUN DESTINATION:
+
+	iOS 17.0 | iphoneos | arm64e | iPhone 13 Pro | no proxy
+
+
+
+== PACKAGE RESOLUTION ERRORS:
+
+	
+
+
+
+== REFERENCED SOURCE PACKAGES:
+
+	<IDESwiftPackageCore.IDESwiftPackageProxy:0x7f8826a19400 path:'/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/SourcePackages/checkouts/FB-PackageWithColorAsset'>
+	<IDESwiftPackageCore.IDESwiftPackage:0x7f882480dbb0 path:'/Users/simonnickel/Archive/development/github/feedback-assistant/ColorFromAssetInPackage'>
+
+
+
+== SESSION GROUP 20888:
+
+	workspace identifier: WorkspaceIdentifier(identifier: 913B0C9A-3EAC-4995-8AF9-937E45B0580C)
+	providers: [
+		Preview Provider | Registry-ColorFromAssetInPackage.swift#1 [Editor(20756)]
+	]
+	translation units: [
+		/Users/simonnickel/Archive/development/github/feedback-assistant/ColorFromAssetInPackage/Sources/ColorFromAssetInPackage/ColorFromAssetInPackage.swift
+	]
+	attributes: [
+		Editor(20756):
+			isAppPreviewEnabled: false
+			destinationMode: automatic
+			previewSettings: [
+				Registry-ColorFromAssetInPackage.swift#1:     isEnabled: true
+					boxedCanvasControlStates: []
+			]
+	]
+	session: 20889
+	request sessions: [
+		Registry[ColorFromAssetInPackage.swift #1 (line 7)]: not completed
+	]
+
+
+
+== UPDATE SESSION 20889:
+
+	Start Date: Wednesday, 11. October 2023 at 21:10:38 Central European Summer Time
+	Preview Provider {
+		UpdaterStore {
+			updaterLimit: single
+			expectedAbandonedIdentifiers: [20404, 6294, 5529, 4222, 20638, 19721, 20357, 5944, 5712, 5322, 5290, 6164, 20843, 5851, 19094, 6521, 6473, 19779, 5576, 20581, 8973, 6090, 4298, 18969, 5633, 19179, 18637, 5308, 5991, 19666, 18713, 19837, 18810, 19036, 6248, 5650, 4185, 19617, 5339, 20892, 18797, 18622, 20452, 6424, 18779, 18650, 5406, 5394, 5255]
+		}
+		Simulator {
+			platform: iphonesimulator
+			device: BCEB342F-234E-48E3-A338-BF3B64CEF580 iPhone 15 Pro
+			buildNumber: 21A328
+			runtimePath: /Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime
+		}
+		pid: 30922
+		host bundle:
+		com.apple.dt.PreviewAgent.iOS {
+			url: file:///Applications/Xcode-15.0.0-Release.Candidate.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCPreviewAgent.app
+			version: 21.0.63
+			attributes: [
+				LaunchConfigEnvironmentVariablesPreviewAttributesKey: ["OS_ACTIVITY_TOOLS_OVERSIZE": "YES", "__XPC_DYLD_FRAMEWORK_PATH": "/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator", "OS_ACTIVITY_TOOLS_PRIVACY": "YES", "SQLITE_ENABLE_THREAD_ASSERTIONS": "1", "PACKAGE_RESOURCE_BUNDLE_PATH": "/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphoneos", "__XPC_DYLD_LIBRARY_PATH": "/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator", "__XCODE_BUILT_PRODUCTS_DIR_PATHS": "/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator", "CFLOG_FORCE_DISABLE_STDERR": "1", "IDE_DISABLED_OS_ACTIVITY_DT_MODE": "1", "DYLD_FRAMEWORK_PATH": "/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator", "DYLD_LIBRARY_PATH": "/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator"],
+				AppExtensionIdentifierPreviewAttributeKey: nil,
+			]
+		}
+		builtTargetDescriptions: empty
+	}
+	Preview Preflight {
+		UpdaterStore {
+			updaterLimit: single
+			expectedAbandonedIdentifiers: [20404, 6294, 5529, 4222, 20638, 19721, 20357, 5944, 5712, 5322, 5290, 6164, 20843, 5851, 19094, 6521, 6473, 19779, 5576, 20581, 8973, 6090, 4298, 18969, 5633, 19179, 18637, 5308, 5991, 19666, 18713, 19837, 18810, 19036, 6248, 5650, 4185, 19617, 5339, 20892, 18797, 18622, 20452, 6424, 18779, 18650, 5406, 5394, 5255]
+		}
+		Simulator {
+			platform: iphonesimulator
+			device: BCEB342F-234E-48E3-A338-BF3B64CEF580 iPhone 15 Pro
+			buildNumber: 21A328
+			runtimePath: /Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime
+		}
+		pid: 30922
+		host bundle:
+		com.apple.dt.PreviewAgent.iOS {
+			url: file:///Applications/Xcode-15.0.0-Release.Candidate.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCPreviewAgent.app
+			version: 21.0.63
+			attributes: [
+				LaunchConfigEnvironmentVariablesPreviewAttributesKey: ["OS_ACTIVITY_TOOLS_OVERSIZE": "YES", "__XPC_DYLD_FRAMEWORK_PATH": "/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator", "OS_ACTIVITY_TOOLS_PRIVACY": "YES", "SQLITE_ENABLE_THREAD_ASSERTIONS": "1", "PACKAGE_RESOURCE_BUNDLE_PATH": "/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphoneos", "__XPC_DYLD_LIBRARY_PATH": "/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator", "__XCODE_BUILT_PRODUCTS_DIR_PATHS": "/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator", "CFLOG_FORCE_DISABLE_STDERR": "1", "IDE_DISABLED_OS_ACTIVITY_DT_MODE": "1", "DYLD_FRAMEWORK_PATH": "/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator", "DYLD_LIBRARY_PATH": "/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator"],
+				AppExtensionIdentifierPreviewAttributeKey: nil,
+			]
+		}
+		builtTargetDescriptions: empty
+	}
+	Build Graph {
+		target dynamicPackageProduct ColorFromAssetInPackage (#1)
+		   target dynamicPackageProduct ColorFromAssetInPackage (#2)
+			  target dynamicPackageProduct FBPackageWithColorAsset (#3)
+				 target dynamicPackageProduct FBPackageWithColorAsset (#4)
+			  translationUnit ColorFromAssetInPackage.swift (#5)
+			  Preview Preflight | Registry-ColorFromAssetInPackage.swift#1: from Editor(20756) for local Preview Preflight | Registry-ColorFromAssetInPackage.swift#1: from Editor(20756) for local (#6)
+			  Preview Provider | Registry-ColorFromAssetInPackage.swift#1 [Editor(20756)] Preview Provider | Registry-ColorFromAssetInPackage.swift#1 [Editor(20756)] (#7)
+	}
+	Update Plan {
+		iOS [x86_64 iphonesimulator17.0 iphonesimulator] (iPhone 15 Pro, 123BBDC3-5936-4634-98A8-18B78F7845C0-iphonesimulator17.0-x86_64-iphonesimulator), ["ColorFromAssetInPackage", "ColorFromAssetInPackage"], thinning disabled) {
+			Destination: iPhone 15 Pro 123BBDC3-5936-4634-98A8-18B78F7845C0 | default device for iphonesimulator [
+				Framework Agent - Previews {
+					execution points [
+						point Preview Preflight | Registry-ColorFromAssetInPackage.swift#1: from Editor(20756) for local
+						provider ColorFromAssetInPackage.Registry[ColorFromAssetInPackage.swift #1 (line 7)]
+					]
+					translation units [
+						ColorFromAssetInPackage.swift (in ColorFromAssetInPackage)
+					]
+					loadable products [
+						Description(buildableName: "ColorFromAssetInPackage", moduleName: "ColorFromAssetInPackage")
+					]
+					modules [
+						ColorFromAssetInPackage
+						FBPackageWithColorAsset
+					]
+				}
+			]
+		}
+	}
+
+
+
+== UPDATE SESSION 20930:
+
+	Start Date: Wednesday, 11. October 2023 at 21:10:38 Central European Summer Time
+	Preview.RegistryPreview {
+		UpdaterStore {
+			updaterLimit: single
+			expectedAbandonedIdentifiers: [20404, 6294, 5529, 4222, 20638, 19721, 20357, 5944, 5712, 5322, 5290, 6164, 20843, 5851, 19094, 6521, 6473, 19779, 5576, 20581, 8973, 6090, 4298, 18969, 5633, 19179, 18637, 5308, 5991, 19666, 18713, 19837, 18810, 19036, 6248, 5650, 4185, 19617, 5339, 20892, 18797, 18622, 20452, 6424, 18779, 18650, 5406, 5394, 5255]
+		}
+		Simulator {
+			platform: iphonesimulator
+			device: BCEB342F-234E-48E3-A338-BF3B64CEF580 iPhone 15 Pro
+			buildNumber: 21A328
+			runtimePath: /Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime
+		}
+		pid: 30922
+		host bundle:
+		com.apple.dt.PreviewAgent.iOS {
+			url: file:///Applications/Xcode-15.0.0-Release.Candidate.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCPreviewAgent.app
+			version: 21.0.63
+			attributes: [
+				AppExtensionIdentifierPreviewAttributeKey: nil,
+				LaunchConfigEnvironmentVariablesPreviewAttributesKey: ["OS_ACTIVITY_TOOLS_OVERSIZE": "YES", "__XPC_DYLD_FRAMEWORK_PATH": "/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator", "OS_ACTIVITY_TOOLS_PRIVACY": "YES", "SQLITE_ENABLE_THREAD_ASSERTIONS": "1", "PACKAGE_RESOURCE_BUNDLE_PATH": "/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphoneos", "__XPC_DYLD_LIBRARY_PATH": "/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator", "__XCODE_BUILT_PRODUCTS_DIR_PATHS": "/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator", "CFLOG_FORCE_DISABLE_STDERR": "1", "IDE_DISABLED_OS_ACTIVITY_DT_MODE": "1", "DYLD_FRAMEWORK_PATH": "/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator", "DYLD_LIBRARY_PATH": "/Users/simonnickel/Library/Developer/Xcode/DerivedData/ColorFromAssetInPackage-dtcfjzepjohaoceoixuawafsocqk/Build/Intermediates.noindex/Previews/ColorFromAssetInPackage/Products/Debug-iphonesimulator"],
+			]
+		}
+		builtTargetDescriptions: empty
+	}
+	Build Graph {
+		target dynamicPackageProduct ColorFromAssetInPackage (#1)
+		   target dynamicPackageProduct ColorFromAssetInPackage (#2)
+			  target dynamicPackageProduct FBPackageWithColorAsset (#3)
+				 target dynamicPackageProduct FBPackageWithColorAsset (#4)
+			  Preview.RegistryPreview | Registry-ColorFromAssetInPackage.swift#1 [interactive(target: PreviewsPipeline.PreviewConfiguration.InteractionMode.InteractionTarget.local), from Editor(20756) for local, variant: nil, overrides: []] Preview.RegistryPreview | Registry-ColorFromAssetInPackage.swift#1 [interactive(target: PreviewsPipeline.PreviewConfiguration.InteractionMode.InteractionTarget.local), from Editor(20756) for local, variant: nil, overrides: []] (#5)
+			  translationUnit ColorFromAssetInPackage.swift (#6)
+	}
+	Update Plan {
+		iOS [x86_64 iphonesimulator17.0 iphonesimulator] (iPhone 15 Pro, 123BBDC3-5936-4634-98A8-18B78F7845C0-iphonesimulator17.0-x86_64-iphonesimulator), ["ColorFromAssetInPackage", "ColorFromAssetInPackage"], thinning disabled) {
+			Destination: iPhone 15 Pro 123BBDC3-5936-4634-98A8-18B78F7845C0 | default device for iphonesimulator [
+				Framework Agent - Previews {
+					execution points [
+						Registry[ColorFromAssetInPackage.swift #1 (line 7)]
+					]
+					translation units [
+						ColorFromAssetInPackage.swift (in ColorFromAssetInPackage)
+					]
+					loadable products [
+						Description(buildableName: "ColorFromAssetInPackage", moduleName: "ColorFromAssetInPackage")
+					]
+					modules [
+						ColorFromAssetInPackage
+						FBPackageWithColorAsset
+					]
+				}
+			]
+		}
+	}
+
+
+
+== POWER STATE LOGS:
+
+	11.10.2023, 21:01 Received power source state: Battery Powered (lowPowerMode: false, status: unplugged, level: 88%)
+	11.10.2023, 21:01 No device power state user override user default value.
+	11.10.2023, 21:02 Received power source state: Battery Powered (lowPowerMode: false, status: unplugged, level: 87%)
+	11.10.2023, 21:06 Received power source state: Battery Powered (lowPowerMode: false, status: unplugged, level: 86%)Current power state: Full Power
+
+

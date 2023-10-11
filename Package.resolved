@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "fb-packagewithcolorasset",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/simonnickel/FB-PackageWithColorAsset.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "153d975bb76c179eff73c560ba4f300f315796b8"
+      }
+    }
+  ],
+  "version" : 2
+}
