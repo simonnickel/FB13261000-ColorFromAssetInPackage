@@ -37,6 +37,11 @@ Opening the preview crashes.
 Full crashlog can be found in Report.txt
 
 
+## Workaround
+
+There seems to be some kind of workaround: https://developer.apple.com/forums/thread/664295
+
+
 ## Tested on
 
  - Xcode Version 15.0 (15A240d)
